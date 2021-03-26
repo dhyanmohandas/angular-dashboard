@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @Component({
@@ -9,4 +8,5 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 })
 export class AppComponent {
   title = 'Angular Dashboard';
+  checkValue: Boolean = true;
 }
