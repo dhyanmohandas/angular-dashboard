@@ -13,3 +13,17 @@
         <!-- <input [(ngModel)]="checkValue"  type="checkbox"/>  -->
       </section>
 
+       <div>
+        <ul class="list-group">
+              <li class="list-group-item"  *ngFor="let item of RiskRoles">
+                <input type="radio" [(ngModel)]="radioSelected" name="list_name" value="{{item.Name}}" (change)="onItemChange(item)"/> 
+                {{item.Name}}
+                
+              </li>
+        </ul>
+      </div>
+
+      <div>{{radioSelectedString}}</div>
+
+       
+
